@@ -79,18 +79,27 @@ d4-tool/
 - [Technical Architecture](./docs/technical-architecture.md) - Detailed technical implementation
 - [Development Roadmap](./docs/development-roadmap.md) - 12-week development plan
 - [Quick Start Guide](./docs/quick-start-guide.md) - Get up and running quickly
+- [Team Collaboration Guide](./docs/team-collaboration-guide.md) - Team workflow and best practices
+- [Team Onboarding Checklist](./docs/team-onboarding-checklist.md) - New team member setup
+- [GitHub Setup Guide](./docs/github-setup-guide.md) - Repository configuration
 
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](./CONTRIBUTING.md) for details.
 
+### Team Collaboration
+
+This project is designed for team development. See our [Team Collaboration Guide](./docs/team-collaboration-guide.md) for detailed workflow and best practices.
+
 ### Development Workflow
 
-1. Fork the repository
+1. Fork the repository (for external contributors)
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+6. Get code review from team members
+7. Merge after approval
 
 ## 📋 Roadmap
 
