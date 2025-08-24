@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/orbitalwhale/d4-tool/discussions
+    about: Please ask and answer questions here.
+  - name: Documentation
+    url: https://github.com/orbitalwhale/d4-tool/tree/main/docs
+    about: Check our documentation for answers.
+  - name: Community Guidelines
+    url: https://github.com/orbitalwhale/d4-tool/blob/main/CONTRIBUTING.md
+    about: Learn about our community standards and how to contribute.

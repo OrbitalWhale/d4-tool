@@ -1,0 +1,73 @@
+{
+  "name": "d4-tool",
+  "version": "1.0.0",
+  "description": "A desktop application for creating and managing Diablo 4 character builds",
+  "main": "src/main/main.js",
+  "homepage": "https://github.com/orbitalwhale/d4-tool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orbitalwhale/d4-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orbitalwhale/d4-tool/issues"
+  },
+  "keywords": [
+    "diablo4",
+    "build-tool",
+    "electron",
+    "desktop-app",
+    "gaming",
+    "rpg"
+  ],
+  "author": "OrbitalWhale",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm run watch\" \"wait-on http://localhost:3000 && electron .\"",
+    "watch": "nodemon --watch src --exec \"npm run build\"",
+    "build": "tsc",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Error: no linting configured\" && exit 1",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0",
+    "concurrently": "^8.0.0",
+    "wait-on": "^7.0.0",
+    "cross-env": "^7.0.0",
+    "nodemon": "^3.0.0",
+    "electron-reload": "^1.5.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "build": {
+    "appId": "com.orbitalwhale.d4-tool",
+    "productName": "Diablo 4 Build Tool",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "data/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.games",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
